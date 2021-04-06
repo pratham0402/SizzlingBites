@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "222324874194",
+    "firebase_url": "https://ryhtm-90bdb.firebaseio.com",
+    "project_id": "ryhtm-90bdb",
+    "storage_bucket": "ryhtm-90bdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222324874194:android:7ce2cbe6a60bfa4193060b",
+        "android_client_info": {
+          "package_name": "com.example.demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "222324874194-i72pftkedkdrbnlbopthp6lt20c5oqrt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDI7ChgYRg38vLrSIxAU-JR0xMdxzVJgO8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "222324874194-i72pftkedkdrbnlbopthp6lt20c5oqrt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222324874194:android:dc98c4132e3fb0bf93060b",
+        "android_client_info": {
+          "package_name": "com.example.displaysongs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "222324874194-i72pftkedkdrbnlbopthp6lt20c5oqrt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDI7ChgYRg38vLrSIxAU-JR0xMdxzVJgO8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "222324874194-i72pftkedkdrbnlbopthp6lt20c5oqrt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222324874194:android:5f8dd2f6261dcbe693060b",
+        "android_client_info": {
+          "package_name": "com.example.sizzlingbites"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "222324874194-i72pftkedkdrbnlbopthp6lt20c5oqrt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDI7ChgYRg38vLrSIxAU-JR0xMdxzVJgO8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "222324874194-i72pftkedkdrbnlbopthp6lt20c5oqrt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

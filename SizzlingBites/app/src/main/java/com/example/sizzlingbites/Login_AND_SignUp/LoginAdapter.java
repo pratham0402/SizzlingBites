@@ -1,4 +1,4 @@
-package com.example.sizzlingbites;
+package com.example.sizzlingbites.Login_AND_SignUp;
 
 import android.content.Context;
 

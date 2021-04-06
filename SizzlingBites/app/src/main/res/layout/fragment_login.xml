@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".LoginFragment">
+    tools:context=".Login_AND_SignUp.LoginFragment">
 
     <EditText
         android:id="@+id/login_email"
@@ -19,6 +19,7 @@
         app:layout_constraintVertical_bias="0.05"
         app:layout_constraintHorizontal_bias=".5"
         android:hint="Email"
+        android:inputType="textEmailAddress"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"/>
@@ -28,6 +29,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Password"
+        android:inputType="textPassword"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:background="@drawable/custom_edittext_1"
@@ -54,7 +56,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias=".8"
+        app:layout_constraintVertical_bias=".95"
         app:layout_constraintWidth_percent=".8" />
 
     <TextView

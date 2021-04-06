@@ -8,12 +8,15 @@ import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 import com.airbnb.lottie.LottieAnimationView;
+import com.example.sizzlingbites.Login_AND_SignUp.Login;
 import com.example.sizzlingbites.OnbroadingFragments.onBroading_1_Fragment;
 import com.example.sizzlingbites.OnbroadingFragments.onBroading_2_Fragment;
 import com.example.sizzlingbites.OnbroadingFragments.onBroading_3_Fragment;
@@ -24,9 +27,12 @@ public class Introductory extends AppCompatActivity {
     LottieAnimationView lottieAnimationView;
     Animation animation;
 
+    private static int SPLASH_TIME_COUNT = 5500; // becoz delay is 4000
     private static final int NUM_PAGE = 3;
     private ViewPager viewPager;
     private ScreenSlidePageAdapter slidePageAdapter;
+    SharedPreferences preferences;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +55,24 @@ public class Introductory extends AppCompatActivity {
         logo.animate().translationY(2400).setDuration(1000).setStartDelay(4000);
         appName.animate().translationY(2400).setDuration(1000).setStartDelay(4000);
         lottieAnimationView.animate().translationY(1400).setDuration(1000).setStartDelay(4000);
+/**
+//        new Handler().postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//                preferences = getSharedPreferences("Shared Pref", MODE_PRIVATE);
+//                boolean isFirstTime = preferences.getBoolean("firstTime", true);
+//
+//                if (isFirstTime){
+//                    SharedPreferences.Editor editor = preferences.edit();
+//                    editor.putBoolean("firstTime", false);
+//                    editor.commit();
+//                }
+//                else {
+//                    startActivity(new Intent(Introductory.this, Login.class));
+//                    finish();
+//                }
+//            }
+//        },SPLASH_TIME_COUNT);**/
 
     }
 

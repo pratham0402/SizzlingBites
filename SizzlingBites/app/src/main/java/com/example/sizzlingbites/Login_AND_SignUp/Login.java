@@ -1,4 +1,4 @@
-package com.example.sizzlingbites;
+package com.example.sizzlingbites.Login_AND_SignUp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
@@ -6,6 +6,7 @@ import androidx.viewpager.widget.ViewPager;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 
+import com.example.sizzlingbites.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.tabs.TabLayout;
 
@@ -54,5 +55,8 @@ public class Login extends AppCompatActivity {
         google.animate().translationY(0).alpha(1).setDuration(1000).setStartDelay(600).start();
         twitter.animate().translationY(0).alpha(1).setDuration(1000).setStartDelay(800).start();
         tabLayout.animate().translationY(0).alpha(1).setDuration(1000).setStartDelay(100).start();
+
+
+
     }
 }

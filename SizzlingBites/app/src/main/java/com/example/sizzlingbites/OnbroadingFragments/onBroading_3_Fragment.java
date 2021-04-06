@@ -10,7 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.sizzlingbites.Login;
+import com.example.sizzlingbites.Login_AND_SignUp.Login;
+import com.example.sizzlingbites.MainCourse.DashBoard;
 import com.example.sizzlingbites.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 

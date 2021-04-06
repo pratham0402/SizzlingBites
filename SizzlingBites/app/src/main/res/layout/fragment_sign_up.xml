@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".SignUpFragment">
+    tools:context=".Login_AND_SignUp.SignUpFragment">
 
     <EditText
         android:id="@+id/signup_email"
@@ -19,6 +20,7 @@
         app:layout_constraintVertical_bias="0.05"
         app:layout_constraintHorizontal_bias=".5"
         android:hint="Email"
+        android:inputType="textEmailAddress"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"/>
@@ -28,6 +30,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Mobile No.s"
+        android:inputType="number"
         android:background="@drawable/custom_edittext_1"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
@@ -46,6 +49,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Password"
+        android:inputType="textPassword"
         android:background="@drawable/custom_edittext_1"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
@@ -64,6 +68,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Confirm Password"
+        android:inputType="textPassword"
         android:paddingLeft="20dp"
         android:background="@drawable/custom_edittext_1"
         android:paddingTop="10dp"
@@ -90,7 +95,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signup_confirm_password"
-        app:layout_constraintVertical_bias=".5"
+        app:layout_constraintVertical_bias=".89"
         app:layout_constraintWidth_percent=".8" />
 
 
