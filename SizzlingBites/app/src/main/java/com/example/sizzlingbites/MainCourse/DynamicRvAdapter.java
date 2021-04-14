@@ -1,122 +1,78 @@
 package com.example.sizzlingbites.MainCourse;
 
-import android.app.Activity;
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Adapter;
-import android.widget.LinearLayout;
-import android.widget.ProgressBar;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.sizzlingbites.DRVinterface.LoadMore;
 import com.example.sizzlingbites.R;
 
-import java.util.List;
+import java.util.ArrayList;
 
-class LoadingViewHolder extends RecyclerView.ViewHolder{
+public class DynamicRvAdapter extends RecyclerView.Adapter<DynamicRvAdapter.DynamicRvHolder>{
 
-    public ProgressBar progressBar;
+    public ArrayList<DynamicRvModel> models;
+    private OnItemClickListener listener;
 
-    public LoadingViewHolder(@NonNull View itemView) {
-        super(itemView);
-        progressBar = itemView.findViewById(R.id.dy_pb);
-
-    }
-}
-
-class ItemViewHolder extends RecyclerView.ViewHolder{
-
-    public TextView name;
-
-    public ItemViewHolder(@NonNull View itemView) {
-        super(itemView);
-        name = itemView.findViewById(R.id.dy_name);
-    }
-}
-
-public class DynamicRvAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
-
-    private final int VIEW_TYPE_ITEM = 0, VIEW_TYPE_LOADING = 1;
-    LoadMore loadMore;
-    boolean isLoading;
-    Activity activity;
-    List<DynamicRvModel> items;
-    int visibleThreshold = 5;
-    int lastVisibleItem, totalItemCount;
-
-    public DynamicRvAdapter(RecyclerView recyclerView, Activity activity, List<DynamicRvModel> items) {
-        this.activity = activity;
-        this.items = items;
-        final LinearLayoutManager linearLayoutManager = (LinearLayoutManager) recyclerView.getLayoutManager();
-        recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
-            @Override
-            public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {
-                super.onScrolled(recyclerView, dx, dy);
-                totalItemCount = linearLayoutManager.getItemCount();
-                lastVisibleItem = linearLayoutManager.findLastVisibleItemPosition();
-                if (!isLoading && totalItemCount <= (lastVisibleItem+visibleThreshold)){
-                    if (loadMore != null){
-                        loadMore.onLoadMore();
-                    }
-                    isLoading = true;
-                }
-            }
-        });
+    public DynamicRvAdapter(ArrayList<DynamicRvModel> models) {
+        this.models = models;
     }
 
-    @Override
-    public int getItemViewType(int position) {
-        return items.get(position) == null ? VIEW_TYPE_LOADING:VIEW_TYPE_ITEM; /* ########## */
+    public interface OnItemClickListener{
+        void onItemClick(int position);
     }
 
-    public void setLoadMore(LoadMore loadMore){
-        this.loadMore = loadMore;
+    public void setOnItemClickListener(OnItemClickListener listener){
+        this.listener = listener;
     }
 
     @NonNull
     @Override
-    public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-
-        if (viewType == VIEW_TYPE_ITEM){
-            View view = LayoutInflater.from(activity).inflate(R.layout.dynamic_rv_items, parent, false);
-            return new LoadingViewHolder(view);
-        }
-        else if (viewType == VIEW_TYPE_LOADING){
-            View view = LayoutInflater.from(activity).inflate(R.layout.dynamic_rv_progress_bar, parent, false);
-            return new LoadingViewHolder(view);
-        }
-
-        return null;
+    public DynamicRvHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.dynamic_rv_items, parent, false);
+        return new DynamicRvHolder(view, listener);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
-
-
-        if (holder instanceof ItemViewHolder){
-            DynamicRvModel item = items.get(position);
-            ItemViewHolder viewHolder = (ItemViewHolder) holder;
-            viewHolder.name.setText(items.get(position).getName());
-
-        }
-
-        else if (holder instanceof LoadingViewHolder){
-            LoadingViewHolder loadingViewHolder = (LoadingViewHolder) holder;
-        }
-
+    public void onBindViewHolder(@NonNull DynamicRvHolder holder, int position) {
+        DynamicRvModel model = models.get(position);
+        holder.imageView.setImageResource(model.getImage());
+        holder.textView.setText(model.getName());
     }
 
     @Override
     public int getItemCount() {
-        return items.size();
+        return models.size();
     }
 
-    public void setLoaded(){
-        isLoading = false;
+    public class DynamicRvHolder extends RecyclerView.ViewHolder {
+        public ImageView imageView;
+        public TextView textView;
+        ConstraintLayout constraintLayout;
+        public DynamicRvHolder(@NonNull View itemView, final OnItemClickListener listener){
+            super(itemView);
+            imageView = itemView.findViewById(R.id.dy_img);
+            textView = itemView.findViewById(R.id.dy_name);
+            constraintLayout = itemView.findViewById(R.id.constraintLayout);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (listener!=null){
+                        int position = getAdapterPosition();
+                        if (position != RecyclerView.NO_POSITION){
+                            listener.onItemClick(position);
+                        }
+                    }
+                }
+            });
+
+        }
     }
 }

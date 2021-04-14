@@ -17,6 +17,7 @@ import android.widget.Toast;
 
 import com.example.sizzlingbites.MainActivity;
 import com.example.sizzlingbites.MainCourse.DashBoard;
+import com.example.sizzlingbites.Navigation.DashBoardFragment;
 import com.example.sizzlingbites.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -77,6 +78,7 @@ public class LoginFragment extends Fragment {
             startActivity(new Intent(getContext(), DashBoard.class));
         }
 
+        //login
         L_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -87,6 +89,13 @@ public class LoginFragment extends Fragment {
             }
         });
 
+        ///forgot password
+        forgot_pass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), ForgotPassword.class));
+            }
+        });
 
         return view;
     }

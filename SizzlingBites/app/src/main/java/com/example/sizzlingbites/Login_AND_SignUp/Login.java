@@ -5,6 +5,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.widget.TextView;
 
 import com.example.sizzlingbites.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
