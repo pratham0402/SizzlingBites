@@ -84,7 +84,10 @@ public class LoginFragment extends Fragment {
             public void onClick(View v) {
                 String user_email = L_email.getText().toString().trim();
                 String user_pass = L_pass.getText().toString().trim();
-                isValid(user_email, user_pass);
+                if(user_email.isEmpty() || user_pass.isEmpty()){
+                    Toast.makeText(getContext(), "Not entered anything ", Toast.LENGTH_SHORT).show();
+                }
+                else {isValid(user_email, user_pass);}
                 //startActivity(new Intent(getContext(), DashBoard.class));
             }
         });

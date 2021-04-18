@@ -46,47 +46,47 @@ public class ResStaticAdapter extends RecyclerView.Adapter<ResStaticAdapter.View
         if (check){
             if (p==0){
                 ArrayList<ResDynamicModel> items = new ArrayList<ResDynamicModel>();
-                items.add(new ResDynamicModel("Pizza 1", "Rs. 200", "4.1", "(16)"));
-                items.add(new ResDynamicModel("Pizza 2", "Rs. 100", "4.5", "(16)"));
-                items.add(new ResDynamicModel("Pizza 3", "Rs. 200", "4.5", "(11)"));
-                items.add(new ResDynamicModel("Pizza 4", "Rs. 200", "3.5", "(16)"));
-                items.add(new ResDynamicModel("Pizza 5", "Rs. 250", "4.7", "(26)"));
+                items.add(new ResDynamicModel("Pizza 1", 200));
+                items.add(new ResDynamicModel("Pizza 2", 160));
+                items.add(new ResDynamicModel("Pizza 3", 250));
+                items.add(new ResDynamicModel("Pizza 4", 150));
+                items.add(new ResDynamicModel("Pizza 5", 120));
                 updateResRV.callBack(position, items);
             }
             else if(p==1){
                 ArrayList<ResDynamicModel> items = new ArrayList<ResDynamicModel>();
-                items.add(new ResDynamicModel("Burger 1", "Rs. 200", "4.1", "(16)"));
-                items.add(new ResDynamicModel("Burger 2", "Rs. 100", "4.5", "(16)"));
-                items.add(new ResDynamicModel("Burger 3", "Rs. 200", "4.5", "(11)"));
-                items.add(new ResDynamicModel("Burger 4", "Rs. 200", "3.5", "(16)"));
-                items.add(new ResDynamicModel("Burger 5", "Rs. 250", "4.7", "(26)"));
+                items.add(new ResDynamicModel("Burger 1", 200));
+                items.add(new ResDynamicModel("Burger 2", 160));
+                items.add(new ResDynamicModel("Burger 3", 250));
+                items.add(new ResDynamicModel("Burger 4", 150));
+                items.add(new ResDynamicModel("Burger 5", 120));
                 updateResRV.callBack(position, items);
             }
             else if(p==2){
                 ArrayList<ResDynamicModel> items = new ArrayList<ResDynamicModel>();
-                items.add(new ResDynamicModel("Fries 1", "Rs. 200", "4.1", "(16)"));
-                items.add(new ResDynamicModel("Fries 2", "Rs. 100", "4.5", "(16)"));
-                items.add(new ResDynamicModel("Fries 3", "Rs. 200", "4.5", "(11)"));
-                items.add(new ResDynamicModel("Fries 4", "Rs. 200", "3.5", "(16)"));
-                items.add(new ResDynamicModel("Fries 5", "Rs. 250", "4.7", "(26)"));
+                items.add(new ResDynamicModel("Fries 1", 200));
+                items.add(new ResDynamicModel("Fries 2", 160));
+                items.add(new ResDynamicModel("Fries 3", 250));
+                items.add(new ResDynamicModel("Fries 4", 150));
+                items.add(new ResDynamicModel("Fries 5", 120));
                 updateResRV.callBack(position, items);
             }
             else if (p==3){
                 ArrayList<ResDynamicModel> items = new ArrayList<ResDynamicModel>();
-                items.add(new ResDynamicModel("Ice-Cream 1", "Rs. 200", "4.1", "(16)"));
-                items.add(new ResDynamicModel("Ice-Cream 2", "Rs. 100", "4.5", "(16)"));
-                items.add(new ResDynamicModel("Ice-Cream 3", "Rs. 200", "4.5", "(11)"));
-                items.add(new ResDynamicModel("Ice-Cream 4", "Rs. 200", "3.5", "(16)"));
-                items.add(new ResDynamicModel("Ice-Cream 5", "Rs. 250", "4.7", "(26)"));
+                items.add(new ResDynamicModel("Ice-cream 1", 200));
+                items.add(new ResDynamicModel("Ice-Cream 2", 160));
+                items.add(new ResDynamicModel("Ice-Cream 3", 250));
+                items.add(new ResDynamicModel("Ice-Cream 4", 150));
+                items.add(new ResDynamicModel("Ice-Cream 5", 120));
                 updateResRV.callBack(position, items);
             }
             else if(p==4){
                 ArrayList<ResDynamicModel> items = new ArrayList<ResDynamicModel>();
-                items.add(new ResDynamicModel("Sandwich 1", "Rs. 200", "4.1", "(16)"));
-                items.add(new ResDynamicModel("Sandwich 2", "Rs. 100", "4.5", "(16)"));
-                items.add(new ResDynamicModel("Sandwich 3", "Rs. 200", "4.5", "(11)"));
-                items.add(new ResDynamicModel("Sandwich 4", "Rs. 200", "3.5", "(16)"));
-                items.add(new ResDynamicModel("Sandwich 5", "Rs. 250", "4.7", "(26)"));
+                items.add(new ResDynamicModel("Sandwich 1", 200));
+                items.add(new ResDynamicModel("Sandwich 2", 160));
+                items.add(new ResDynamicModel("Sandwich 3", 250));
+                items.add(new ResDynamicModel("Sandwich 4", 150));
+                items.add(new ResDynamicModel("Sandwich 5", 120));
                 updateResRV.callBack(position, items);
             }
             check=false;
@@ -101,55 +101,55 @@ public class ResStaticAdapter extends RecyclerView.Adapter<ResStaticAdapter.View
                 //pizza
                 if (position==0){
                     ArrayList<ResDynamicModel> items = new ArrayList<ResDynamicModel>();
-                    items.add(new ResDynamicModel("Pizza 1", "Rs. 200", "4.1", "(16)"));
-                    items.add(new ResDynamicModel("Pizza 2", "Rs. 100", "4.5", "(16)"));
-                    items.add(new ResDynamicModel("Pizza 3", "Rs. 200", "4.5", "(11)"));
-                    items.add(new ResDynamicModel("Pizza 4", "Rs. 200", "3.5", "(16)"));
-                    items.add(new ResDynamicModel("Pizza 5", "Rs. 250", "4.7", "(26)"));
+                    items.add(new ResDynamicModel("Pizza 1", 200));
+                    items.add(new ResDynamicModel("Pizza 2", 160));
+                    items.add(new ResDynamicModel("Pizza 3", 250));
+                    items.add(new ResDynamicModel("Pizza 4", 150));
+                    items.add(new ResDynamicModel("Pizza 5", 120));
                     updateResRV.callBack(position, items);
                 }
 
                 //burger
                 else if (position==1){
                     ArrayList<ResDynamicModel> items = new ArrayList<ResDynamicModel>();
-                    items.add(new ResDynamicModel("Burger 1", "Rs. 200", "4.1", "(16)"));
-                    items.add(new ResDynamicModel("Burger 2", "Rs. 100", "4.5", "(16)"));
-                    items.add(new ResDynamicModel("Burger 3", "Rs. 200", "4.5", "(11)"));
-                    items.add(new ResDynamicModel("Burger 4", "Rs. 200", "3.5", "(16)"));
-                    items.add(new ResDynamicModel("Burger 5", "Rs. 250", "4.7", "(26)"));
+                    items.add(new ResDynamicModel("Burger 1", 200));
+                    items.add(new ResDynamicModel("Burger 2", 160));
+                    items.add(new ResDynamicModel("Burger 3", 250));
+                    items.add(new ResDynamicModel("Burger 4", 150));
+                    items.add(new ResDynamicModel("Burger 5", 120));
                     updateResRV.callBack(position, items);
                 }
 
                 //fries
                 else if(position==2){
                     ArrayList<ResDynamicModel> items = new ArrayList<ResDynamicModel>();
-                    items.add(new ResDynamicModel("Fries 1", "Rs. 200", "4.1", "(16)"));
-                    items.add(new ResDynamicModel("Fries 2", "Rs. 100", "4.5", "(16)"));
-                    items.add(new ResDynamicModel("Fries 3", "Rs. 200", "4.5", "(11)"));
-                    items.add(new ResDynamicModel("Fries 4", "Rs. 200", "3.5", "(16)"));
-                    items.add(new ResDynamicModel("Fries 5", "Rs. 250", "4.7", "(26)"));
+                    items.add(new ResDynamicModel("Fries 1", 200));
+                    items.add(new ResDynamicModel("Fries 2", 160));
+                    items.add(new ResDynamicModel("Fries 3", 250));
+                    items.add(new ResDynamicModel("Fries 4", 150));
+                    items.add(new ResDynamicModel("Fries 5", 120));
                     updateResRV.callBack(position, items);
                 }
 
                 //ice-cream
                 else if (position==3){
                     ArrayList<ResDynamicModel> items = new ArrayList<ResDynamicModel>();
-                    items.add(new ResDynamicModel("Ice-Cream 1", "Rs. 200", "4.1", "(16)"));
-                    items.add(new ResDynamicModel("Ice-Cream 2", "Rs. 100", "4.5", "(16)"));
-                    items.add(new ResDynamicModel("Ice-Cream 3", "Rs. 200", "4.5", "(11)"));
-                    items.add(new ResDynamicModel("Ice-Cream 4", "Rs. 200", "3.5", "(16)"));
-                    items.add(new ResDynamicModel("Ice-Cream 5", "Rs. 250", "4.7", "(26)"));
+                    items.add(new ResDynamicModel("Ice-cream 1", 200));
+                    items.add(new ResDynamicModel("Ice-Cream 2", 160));
+                    items.add(new ResDynamicModel("Ice-Cream 3", 250));
+                    items.add(new ResDynamicModel("Ice-Cream 4", 150));
+                    items.add(new ResDynamicModel("Ice-Cream 5", 120));
                     updateResRV.callBack(position, items);
                 }
 
                 //sandwich
                 else if (position==4){
                     ArrayList<ResDynamicModel> items = new ArrayList<ResDynamicModel>();
-                    items.add(new ResDynamicModel("Sandwich 1", "Rs. 200", "4.1", "(16)"));
-                    items.add(new ResDynamicModel("Sandwich 2", "Rs. 100", "4.5", "(16)"));
-                    items.add(new ResDynamicModel("Sandwich 3", "Rs. 200", "4.5", "(11)"));
-                    items.add(new ResDynamicModel("Sandwich 4", "Rs. 200", "3.5", "(16)"));
-                    items.add(new ResDynamicModel("Sandwich 5", "Rs. 250", "4.7", "(26)"));
+                    items.add(new ResDynamicModel("Sandwich 1", 200));
+                    items.add(new ResDynamicModel("Sandwich 2", 160));
+                    items.add(new ResDynamicModel("Sandwich 3", 250));
+                    items.add(new ResDynamicModel("Sandwich 4", 150));
+                    items.add(new ResDynamicModel("Sandwich 5", 120));
                     updateResRV.callBack(position, items);
                 }
             }

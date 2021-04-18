@@ -3,13 +3,15 @@
     package="com.example.sizzlingbites">
 
     <application
+        android:name=".OrderAndCart.ApplicationMain"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Login_AND_SignUp.ForgotPassword"></activity>
+        <activity android:name=".OrderAndCart.ConfirmOrder"></activity>
+        <activity android:name=".Login_AND_SignUp.ForgotPassword" />
         <activity android:name=".Restaurant.resDetail" />
         <activity android:name=".MainCourse.DashBoard" />
         <activity android:name=".Login_AND_SignUp.Login" />
