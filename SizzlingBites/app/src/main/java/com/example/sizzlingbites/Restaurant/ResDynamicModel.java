@@ -1,17 +1,17 @@
 package com.example.sizzlingbites.Restaurant;
 
 public class ResDynamicModel {
-    String name, rating, reviews;
-    int pos, price;
+    String name, rating, reviews, price;
+    int pos;
 
-    public ResDynamicModel(String name, int price, String rating, String reviews) {
+    public ResDynamicModel(String name, String price, String rating, String reviews) {
         this.name = name;
         this.price = price;
         this.rating = rating;
         this.reviews = reviews;
     }
 
-    public ResDynamicModel(String name, int price) {
+    public ResDynamicModel(String name, String price) {
         this.name = name;
         this.price = price;
     }
@@ -32,11 +32,11 @@ public class ResDynamicModel {
         this.name = name;
     }
 
-    public int getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 

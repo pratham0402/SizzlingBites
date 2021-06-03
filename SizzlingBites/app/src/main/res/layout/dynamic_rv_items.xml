@@ -44,18 +44,18 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/dy_details"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Some necessary details"
-            android:textSize="14sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0"
-            app:layout_constraintStart_toStartOf="@+id/dy_name"
-            app:layout_constraintTop_toBottomOf="@+id/dy_name"
-            app:layout_constraintVertical_bias="0" />
+<!--        <TextView-->
+<!--            android:id="@+id/dy_details"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Some necessary details"-->
+<!--            android:textSize="14sp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/dy_name"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/dy_name"-->
+<!--            app:layout_constraintVertical_bias="0" />-->
 
         <RatingBar
             android:id="@+id/dy_rating"
@@ -66,8 +66,8 @@
             app:layout_constraintHorizontal_bias="0"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/dy_details"
-            app:layout_constraintTop_toBottomOf="@+id/dy_details" />
+            app:layout_constraintStart_toStartOf="@+id/dy_name"
+            app:layout_constraintTop_toBottomOf="@+id/dy_name" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

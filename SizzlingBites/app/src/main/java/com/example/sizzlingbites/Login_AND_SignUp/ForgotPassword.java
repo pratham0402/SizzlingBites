@@ -42,11 +42,10 @@ public class ForgotPassword extends AppCompatActivity {
             }
         });
 
-        email = forgot_email.getText().toString().trim();
-
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                email = forgot_email.getText().toString().trim();
                 if(email.isEmpty()){
                     Toast.makeText(ForgotPassword.this, "Enter Email", Toast.LENGTH_SHORT).show();
                 }

@@ -51,6 +51,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics'
     implementation 'com.google.firebase:firebase-auth:20.0.3'
     implementation 'com.google.firebase:firebase-database:19.7.0'//firebaseAuth
+    implementation 'com.google.android.gms:play-services-auth:19.0.0' //google sign in
 
 
     //navigation

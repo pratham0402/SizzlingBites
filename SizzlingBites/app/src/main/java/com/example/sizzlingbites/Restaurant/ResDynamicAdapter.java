@@ -23,8 +23,7 @@ public class ResDynamicAdapter extends RecyclerView.Adapter<ResDynamicAdapter.Vi
     public ArrayList<ResDynamicModel> models;
     Application activity;
     Context context;
-    String name;
-    int price;
+    String name, price;
     UpdateSelectedItem updateSelectedItem;
     private OnItemClickListener listener;
 
@@ -56,7 +55,7 @@ public class ResDynamicAdapter extends RecyclerView.Adapter<ResDynamicAdapter.Vi
     public void onBindViewHolder(@NonNull final ViewHolder holder, int position) {
         final ResDynamicModel model = models.get(position);
         holder.name.setText(model.getName());
-//        holder.price.setText(model.getPrice());
+        holder.price.setText(model.getPrice());
 //        holder.rating.setText(model.getRating());
 //        holder.review.setText(model.getReviews());
         holder.cart.setOnClickListener(new View.OnClickListener() {

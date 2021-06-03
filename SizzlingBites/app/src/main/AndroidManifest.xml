@@ -10,7 +10,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".OrderAndCart.ConfirmOrder"></activity>
+        <activity android:name=".Navigation.AboutUS"></activity>
+        <activity android:name=".Navigation.Profile" />
+        <activity android:name=".OrderAndCart.ConfirmOrder" />
         <activity android:name=".Login_AND_SignUp.ForgotPassword" />
         <activity android:name=".Restaurant.resDetail" />
         <activity android:name=".MainCourse.DashBoard" />

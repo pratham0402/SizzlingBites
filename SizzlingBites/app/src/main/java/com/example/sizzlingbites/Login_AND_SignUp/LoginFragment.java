@@ -15,9 +15,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.sizzlingbites.MainActivity;
 import com.example.sizzlingbites.MainCourse.DashBoard;
-import com.example.sizzlingbites.Navigation.DashBoardFragment;
+import com.example.sizzlingbites.Navigation.Profile;
 import com.example.sizzlingbites.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -104,11 +103,15 @@ public class LoginFragment extends Fragment {
     }
 
     //sign in function
-    private void isValid(String user_email,String user_pass) {
+    private void isValid(final String user_email, String user_pass) {
         firebaseAuth.signInWithEmailAndPassword(user_email, user_pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
+//                    Intent intent1 = new Intent(getContext(), DashBoard.class);
+//                    Intent intent2 = new Intent(getContext(), Profile.class);
+//                    intent1.putExtra("Email", user_email);
+//                    intent1.putExtra("mob",u)
                     checkemailVerification();
                 } else {
                     Toast.makeText(getContext(), "Failed to Login", Toast.LENGTH_SHORT).show();

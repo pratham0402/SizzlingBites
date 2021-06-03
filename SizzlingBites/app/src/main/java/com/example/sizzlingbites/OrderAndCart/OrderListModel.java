@@ -2,10 +2,18 @@ package com.example.sizzlingbites.OrderAndCart;
 
 public class OrderListModel {
 
-    private String name;
-    private int price, quantity=1;
+    private String name, price;
+    private int quantity=1;
 
-    public OrderListModel(String name, int price) {
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    public OrderListModel(String name, String price) {
         this.name = name;
         this.price = price;
     }
@@ -18,11 +26,11 @@ public class OrderListModel {
         this.name = name;
     }
 
-    public int getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 }

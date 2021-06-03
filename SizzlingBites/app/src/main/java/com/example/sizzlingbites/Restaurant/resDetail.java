@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.Toast;
 
 import com.example.sizzlingbites.DRVinterface.UpdateResRV;
@@ -24,6 +25,7 @@ public class resDetail extends AppCompatActivity implements UpdateResRV{
     RecyclerView staticRV, dynamicRV;
     ResStaticAdapter staticAdapter;
     ResDynamicAdapter dynamicAdapter;
+    RatingBar ratingBar;
     ArrayList<ResStaticModel> staticModels = new ArrayList<>();
     ArrayList<ResDynamicModel> dynamicModels;
     Activity context;
@@ -34,6 +36,14 @@ public class resDetail extends AppCompatActivity implements UpdateResRV{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_res_detail);
+
+        ratingBar = findViewById(R.id.res_rating);
+        ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
+            @Override
+            public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
+                ratingBar.setRating(rating);
+            }
+        });
 
         Intent intent = getIntent();
         pos = intent.getIntExtra("pos",0);

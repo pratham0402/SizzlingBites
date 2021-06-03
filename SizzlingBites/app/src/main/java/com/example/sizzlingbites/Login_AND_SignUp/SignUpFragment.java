@@ -121,7 +121,7 @@ public class SignUpFragment extends Fragment {
     }
 
     private void sendInfo(){
-        UserInfo userInfo = new UserInfo(user_email, user_pass, mob);
+        UserInfo userInfo = new UserInfo(user_email, user_pass, mob, null);
         FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
         //DatabaseReference myref = firebaseDatabase.getReference(firebaseAuth.getUid());
         DatabaseReference myref = firebaseDatabase.getReference("user2/"+firebaseAuth.getUid());

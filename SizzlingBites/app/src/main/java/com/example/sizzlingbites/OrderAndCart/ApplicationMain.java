@@ -26,7 +26,7 @@ public class ApplicationMain extends Application implements UpdateSelectedItem {
     }
 
     @Override
-    public void addItems(String name, int price) {
+    public void addItems(String name, String price) {
         orderListModels.add(new OrderListModel(name, price));
     }
 

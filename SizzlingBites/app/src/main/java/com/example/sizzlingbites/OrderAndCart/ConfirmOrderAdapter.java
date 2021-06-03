@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -32,10 +33,37 @@ public class ConfirmOrderAdapter extends RecyclerView.Adapter<ConfirmOrderAdapte
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        OrderListModel model = models.get(position);
+    public void onBindViewHolder(@NonNull final ViewHolder holder, int position) {
+        final OrderListModel model = models.get(position);
         holder.name.setText(model.getName());
-//        holder.price.setText(model.getPrice());
+        holder.price.setText(model.getPrice());
+        model.setQuantity(1);
+
+        holder.add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String s = (String) holder.quan.getText();
+                int i = Integer.parseInt(s);
+                i++;
+                model.setQuantity(i);
+                s = Integer.toString(i);
+                holder.quan.setText(Integer.toString(model.getQuantity()));
+            }
+        });
+
+        holder.minus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String s = (String) holder.quan.getText();
+                int i = Integer.parseInt(s);
+                if (i>0){
+                    i--;
+                    model.setQuantity(i);
+                    s = Integer.toString(i);
+                    holder.quan.setText(Integer.toString(model.getQuantity()));
+                }
+            }
+        });
     }
 
     @Override
@@ -44,11 +72,15 @@ public class ConfirmOrderAdapter extends RecyclerView.Adapter<ConfirmOrderAdapte
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        TextView name, price;
+        TextView name, price, quan;
+        ImageView add,minus;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             name= itemView.findViewById(R.id.confirm_name);
             price = itemView.findViewById(R.id.confirm_price);
+            quan = itemView.findViewById(R.id.confirm_amt);
+            add = itemView.findViewById(R.id.add);
+            minus = itemView.findViewById(R.id.minus);
         }
     }
 }

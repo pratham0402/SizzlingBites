@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public interface UpdateSelectedItem {
 
-    void addItems(String name, int price);
+    void addItems(String name, String price);
 
     ArrayList<OrderListModel> getItems();
 
