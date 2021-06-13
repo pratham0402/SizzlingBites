@@ -24,8 +24,8 @@
         <menu>
 
             <item android:id="@+id/nav_phone"
-                android:title="Contact Us"
-                android:icon="@drawable/ic_phone"/>
+                android:title="Feedback"
+                android:icon="@drawable/ic_feedback"/>
 
             <item android:id="@+id/nav_about"
                 android:title="About US"

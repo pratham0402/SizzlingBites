@@ -52,7 +52,7 @@
             app:layout_constraintHorizontal_bias="0"
             app:layout_constraintVertical_bias="0"
             android:layout_marginTop="20dp"
-            android:text="Name"
+            android:text="User Mobile no."
             android:fontFamily="sans-serif-light"
             android:textSize="18sp"
             android:paddingLeft="15dp"

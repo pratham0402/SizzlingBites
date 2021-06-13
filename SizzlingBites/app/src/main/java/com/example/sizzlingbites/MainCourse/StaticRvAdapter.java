@@ -47,15 +47,11 @@ public class StaticRvAdapter extends RecyclerView.Adapter<StaticRvAdapter.Static
 
         if (check){
             ArrayList<DynamicRvModel> items = new ArrayList<DynamicRvModel>();
-            items.add(new DynamicRvModel("pizza 1", R.drawable.food_pizza,0));
-            items.add(new DynamicRvModel("pizza 2", R.drawable.food_pizza,0));
-            items.add(new DynamicRvModel("pizza 3", R.drawable.food_pizza,0));
-            items.add(new DynamicRvModel("pizza 4", R.drawable.food_pizza,0));
-            items.add(new DynamicRvModel("pizza 5", R.drawable.food_pizza,0));
-            items.add(new DynamicRvModel("pizza 6", R.drawable.food_pizza,0));
-            items.add(new DynamicRvModel("pizza 7", R.drawable.food_pizza,0));
-            items.add(new DynamicRvModel("pizza 8", R.drawable.food_pizza,0));
-            items.add(new DynamicRvModel("pizza 9", R.drawable.food_pizza,0));
+            items.add(new DynamicRvModel("Simple Pizza", R.drawable.food_pizza,0));
+            items.add(new DynamicRvModel("Cheese Pizza", R.drawable.food_pizza,0));
+            items.add(new DynamicRvModel("Pizza Margherita", R.drawable.food_pizza,0));
+            items.add(new DynamicRvModel("Pizza Marinara", R.drawable.food_pizza,0));
+            items.add(new DynamicRvModel("Chicago Pizza", R.drawable.food_pizza,0));
 
             updateRV.callBack(position, items);
             check = false;
@@ -70,15 +66,11 @@ public class StaticRvAdapter extends RecyclerView.Adapter<StaticRvAdapter.Static
                 //pizza
                 if (position==0){
                     ArrayList<DynamicRvModel> items = new ArrayList<DynamicRvModel>();
-                    items.add(new DynamicRvModel("pizza 1", R.drawable.food_pizza,0));
-                    items.add(new DynamicRvModel("pizza 2", R.drawable.food_pizza,0));
-                    items.add(new DynamicRvModel("pizza 3", R.drawable.food_pizza,0));
-                    items.add(new DynamicRvModel("pizza 4", R.drawable.food_pizza,0));
-                    items.add(new DynamicRvModel("pizza 5", R.drawable.food_pizza,0));
-                    items.add(new DynamicRvModel("pizza 6", R.drawable.food_pizza,0));
-                    items.add(new DynamicRvModel("pizza 7", R.drawable.food_pizza,0));
-                    items.add(new DynamicRvModel("pizza 8", R.drawable.food_pizza,0));
-                    items.add(new DynamicRvModel("pizza 9", R.drawable.food_pizza,0));
+                    items.add(new DynamicRvModel("Simple Pizza", R.drawable.food_pizza,0));
+                    items.add(new DynamicRvModel("Cheese Pizza", R.drawable.food_pizza,0));
+                    items.add(new DynamicRvModel("Pizza Margherita", R.drawable.food_pizza,0));
+                    items.add(new DynamicRvModel("Pizza Marinara", R.drawable.food_pizza,0));
+                    items.add(new DynamicRvModel("Chicago Pizza", R.drawable.food_pizza,0));
 
                     updateRV.callBack(position, items);
                 }
@@ -86,15 +78,11 @@ public class StaticRvAdapter extends RecyclerView.Adapter<StaticRvAdapter.Static
                 //burger
                 else if (position==1){
                     ArrayList<DynamicRvModel> items = new ArrayList<DynamicRvModel>();
-                    items.add(new DynamicRvModel("burger 1", R.drawable.food_burger,1));
-                    items.add(new DynamicRvModel("burger 2", R.drawable.food_burger,1));
-                    items.add(new DynamicRvModel("burger 3", R.drawable.food_burger,1));
-                    items.add(new DynamicRvModel("burger 4", R.drawable.food_burger,1));
+                    items.add(new DynamicRvModel("Simple Burger", R.drawable.food_burger,1));
+                    items.add(new DynamicRvModel("Potato Corn Burger", R.drawable.food_burger,1));
+                    items.add(new DynamicRvModel("Crispy Combo Burger", R.drawable.food_burger,1));
+                    items.add(new DynamicRvModel("Veg Chilli Burger", R.drawable.food_burger,1));
                     items.add(new DynamicRvModel("burger 5", R.drawable.food_burger,1));
-                    items.add(new DynamicRvModel("burger 6", R.drawable.food_burger,1));
-                    items.add(new DynamicRvModel("burger 7", R.drawable.food_burger,1));
-                    items.add(new DynamicRvModel("burger 8", R.drawable.food_burger,1));
-                    items.add(new DynamicRvModel("burger 9", R.drawable.food_burger,1));
 
                     updateRV.callBack(position, items);
                 }
@@ -102,15 +90,11 @@ public class StaticRvAdapter extends RecyclerView.Adapter<StaticRvAdapter.Static
                 //fries
                 else if(position==2){
                     ArrayList<DynamicRvModel> items = new ArrayList<DynamicRvModel>();
-                    items.add(new DynamicRvModel("fries 1", R.drawable.food_fries,2));
-                    items.add(new DynamicRvModel("fries 2", R.drawable.food_fries,2));
-                    items.add(new DynamicRvModel("fries 3", R.drawable.food_fries,2));
-                    items.add(new DynamicRvModel("fries 4", R.drawable.food_fries,2));
-                    items.add(new DynamicRvModel("fries 5", R.drawable.food_fries,2));
-                    items.add(new DynamicRvModel("fries 6", R.drawable.food_fries,2));
-                    items.add(new DynamicRvModel("fries 7", R.drawable.food_fries,2));
-                    items.add(new DynamicRvModel("fries 8", R.drawable.food_fries,2));
-                    items.add(new DynamicRvModel("fries 9", R.drawable.food_fries,2));
+                    items.add(new DynamicRvModel("French Fires", R.drawable.food_fries,2));
+                    items.add(new DynamicRvModel("Tornado Fries", R.drawable.food_fries,2));
+                    items.add(new DynamicRvModel("Sweet Potato Fries", R.drawable.food_fries,2));
+                    items.add(new DynamicRvModel("Steak Fries", R.drawable.food_fries,2));
+                    items.add(new DynamicRvModel("Tater Tots", R.drawable.food_fries,2));
 
                     updateRV.callBack(position, items);
                 }
@@ -118,15 +102,11 @@ public class StaticRvAdapter extends RecyclerView.Adapter<StaticRvAdapter.Static
                 //ice-cream
                 else if (position==3){
                     ArrayList<DynamicRvModel> items = new ArrayList<DynamicRvModel>();
-                    items.add(new DynamicRvModel("ice-cream 1", R.drawable.food_icecream,3));
-                    items.add(new DynamicRvModel("ice-cream 2", R.drawable.food_icecream,3));
-                    items.add(new DynamicRvModel("ice-cream 3", R.drawable.food_icecream,3));
-                    items.add(new DynamicRvModel("ice-cream 4", R.drawable.food_icecream,3));
-                    items.add(new DynamicRvModel("ice-cream 5", R.drawable.food_icecream,3));
-                    items.add(new DynamicRvModel("ice-cream 6", R.drawable.food_icecream,3));
-                    items.add(new DynamicRvModel("ice-cream 7", R.drawable.food_icecream,3));
-                    items.add(new DynamicRvModel("ice-cream 8", R.drawable.food_icecream,3));
-                    items.add(new DynamicRvModel("ice-cream 9", R.drawable.food_icecream,3));
+                    items.add(new DynamicRvModel("Chocolate ice-cream", R.drawable.food_icecream,3));
+                    items.add(new DynamicRvModel("Vanilla ice-cream", R.drawable.food_icecream,3));
+                    items.add(new DynamicRvModel("Mango ice-cream", R.drawable.food_icecream,3));
+                    items.add(new DynamicRvModel("Stawberry ice-cream", R.drawable.food_icecream,3));
+                    items.add(new DynamicRvModel("Mint Chocolate ice-cream", R.drawable.food_icecream,3));
 
                     updateRV.callBack(position, items);
                 }
@@ -134,15 +114,11 @@ public class StaticRvAdapter extends RecyclerView.Adapter<StaticRvAdapter.Static
                 //sandwich
                 else if (position==4){
                     ArrayList<DynamicRvModel> items = new ArrayList<DynamicRvModel>();
-                    items.add(new DynamicRvModel("sandwich 1", R.drawable.food_sandwich,4));
-                    items.add(new DynamicRvModel("sandwich 2", R.drawable.food_sandwich,4));
-                    items.add(new DynamicRvModel("sandwich 3", R.drawable.food_sandwich,4));
-                    items.add(new DynamicRvModel("sandwich 4", R.drawable.food_sandwich,4));
-                    items.add(new DynamicRvModel("sandwich 5", R.drawable.food_sandwich,4));
-                    items.add(new DynamicRvModel("sandwich 6", R.drawable.food_sandwich,4));
-                    items.add(new DynamicRvModel("sandwich 7", R.drawable.food_sandwich,4));
-                    items.add(new DynamicRvModel("sandwich 8", R.drawable.food_sandwich,4));
-                    items.add(new DynamicRvModel("sandwich 9", R.drawable.food_sandwich,4));
+                    items.add(new DynamicRvModel("Simple Sandwich", R.drawable.food_sandwich,4));
+                    items.add(new DynamicRvModel("Tomato Cucumber Sandwich", R.drawable.food_sandwich,4));
+                    items.add(new DynamicRvModel("Panner Sandwich", R.drawable.food_sandwich,4));
+                    items.add(new DynamicRvModel("Curd Sandwich", R.drawable.food_sandwich,4));
+                    items.add(new DynamicRvModel("Grilled Cheese Sandwich", R.drawable.food_sandwich,4));
 
                     updateRV.callBack(position, items);
                 }
